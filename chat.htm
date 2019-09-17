@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <!-- <title>{{ @title }}</title> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="col-lg-9">
+                <div id="hellomsg">
+                    <p>Hello </p><p class="admin">andrzejek</p> on chat <p class="user">default</p><p></p>
+                </div>
+                <div class="chatbox">
+                    <div class="chat scroll" id="scroll"><div class="login wpis"><p class="admin">andrzejek</p><p> entered the chat</p></div>
+                    <div class="wpis"><p class="admin">11:38 andrzejek (1412):</p><div class="wciecie"><p>serpiojgn</p></div></div>
+                    <div class="wpis"><div class="wciecie"><p>aewf</p></div></div>
+                    <div class="wpis"><div class="wciecie"><p>wefgaweg</p></div></div>
+                    <div class="wpis"><div class="wciecie"><p>ar</p></div></div>
+                    <div class="wpis"><div class="wciecie"><p>ser</p></div></div>
+                    <div class="personal wpis"><p></p><div class="personal"><p>Command list</p></div>
+                    <div class="personal"><p>/ban (nick)           -ban</p></div>
+                    <div class="personal"><p>/unban (nick)         -unban</p></div>
+                    <div class="personal"><p>/del (record id)      -delete message with this id</p></div>
+                    <div class="personal"><p>/permiss (nick) (1/0) -set user/admin permissions</p></div>
+                    <div class="personal"><p>/echo (record id)     -show content of deleted message</p></div><p></p></div>
+                    <div class="login wpis"><p class="admin">test</p><p> entered the chat</p></div>
+                    <div class="wpis"><p class="admin">11:38 test (1419):</p><div class="wciecie"><p>areg</p></div></div>
+                    <div class="wpis"><p class="admin">11:38 andrzejek (1420):</p><div class="wciecie"><p>awef</p></div></div>
+                    <div class="login wpis"><p class="admin">test</p><p> left the chat</p></div></div>
+                </div>
+            </div> 
+            <div class="col-lg-3">
+                <div class="userlist">
+                    <div class="title centered">
+                        Userlist
+                    </div>
+                    <div id="userlist">
+                        <div class="onlineuser admin">andrzejek</div>
+                        <div class="onlineuser admin">test</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="col-lg-8"><input class="chatinput" id="wiadomosc" type="text" maxlength="{{ @max_char }}" autofocus autocomplete="off"></div>
+                <div class="col-lg-2"><button class="btn send" onclick="submitek()">Send</button></div>
+                <div class="col-lg-2"><button class="btn" onclick="logout()">Logout</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="ui/js/js.js"></script> -->
+</body>
